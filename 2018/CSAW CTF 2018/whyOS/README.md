@@ -22,7 +22,7 @@ We begin by taking a quick glance through the `console.log` to see what we were 
 I assumed this was the format for the log entry where the flag was hiding. Based on the snippet of code above, I was able to tell the flag was in the last part of the log entry. After getting the hint: `the flag is literally a hex string`, I was able to narrow down my search results by a ton. In order to narrow down the initial search results even more, I assumed the flag was at least 32 characters long. 
 
 I felt this was enough to at least get me started, so I began a search with the following assumptions:
-- The flag is in the last part of the log entry
+- The flag is in the last field of a log entry with four fields
 - The flag is a hex string of 32 characters or more
 
 Using this criteria, I wrote a quick python script to filter through the entries:
