@@ -4,7 +4,7 @@
 ---
 For this challenge, we are given a file `rewind.tar.gz`.
 
-We begin by extracting the contents using `tar -xzf rewind.tar.gz`. We are given two files: `rewind-rr-snp` and `rewind-rr-nodent.log`. We then run our basic recon commands on the files: `file`, `strings`, and `binwalk` to see what we are dealing with.
+We begin by extracting the contents using `tar -xzf rewind.tar.gz`. We are given two files: `rewind-rr-snp` and `rewind-rr-nodent.log`. We then run our basic recon commands such as `file`, `strings`, and `binwalk` on the files to see what we are dealing with.
 
 Both of the files were pretty big so `strings` returned a lot of results for each of them. However, while running `strings` on `rewind-rr-snp`, I thought I saw the words `flag` fly across the screen, so I searched for the standard flag format with `strings rewind-rr-snp | grep flag{` which returned:
 ```
