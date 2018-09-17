@@ -9,7 +9,7 @@
 >
 > Sun 9:09 AM: its a hex string guys
 ***
-For this challenge, we are given two files: `com.yourcompany.whyos_4.2.0-28debug_iphoneos-arm.deb` and `console.log`. 
+For this challenge, we are given two files: [com.yourcompany.whyos_4.2.0-28debug_iphoneos-arm.deb](com.yourcompany.whyos_4.2.0-28debug_iphoneos-arm.deb) and [console.log](console.log). 
 
 We begin by taking a quick glance through the `console.log` to see what we were dealing with. The `console.log` turned out to be an extremely large file containing 185,088 log entries, which meant `com.yourcompany.whyos_4.2.0-28debug_iphoneos-arm.deb` had to contain some clues to help us narrow down the search criteria. I begin looking through the file for any clues that might point us towards where the flag might be. After a quick search through the contents of the files, we find a file named `Root.plist` located in `data.tar.lzma/Library/PreferenceBundles/whyOSsettings.bundle/` which contained the following snippet of code:
 
