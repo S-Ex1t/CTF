@@ -2,7 +2,7 @@
 ***Category: Forensics***
 >Sometimes you have to look back and replay what has been done right and wrong
 ---
-For this challenge, we are given a file [rewind.tar.gz](rewind.tar.gz).
+For this challenge, we are given a file `rewind.tar.gz`.
 
 We begin by extracting the contents using `tar -xzf rewind.tar.gz`. We are then given two files: `rewind-rr-snp` and `rewind-rr-nodent.log`. We then run our basic recon commands on the files: `file`, `strings`, and `binwalk` to see what we are dealing with.
 
