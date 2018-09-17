@@ -9,6 +9,9 @@
 >
 > Sun 9:09 AM: its a hex string guys
 ***
+
+Update: Since I was completely new to iOS applications, I decided to do a little more research after the CTF was over. I knew my solution was not the intended method to solve the challenge and it also relied heavily on the hint, so I began doing some research on log entries and how they are generated to figure out how to solve this the correct way. As it turns out, my assumptions about the flag format were completely wrong and my solution was 100% luck and coincidence. Nevertheless, I still got the flag and ended up learning something new, so that's a win in my book.
+
 For this challenge, we are given two files: [com.yourcompany.whyos_4.2.0-28debug_iphoneos-arm.deb](com.yourcompany.whyos_4.2.0-28debug_iphoneos-arm.deb) and [console.log](console.log). 
 
 We begin by taking a quick glance through the `console.log` to see what we were dealing with. The `console.log` turned out to be an extremely large file containing 185,088 log entries, which meant `com.yourcompany.whyos_4.2.0-28debug_iphoneos-arm.deb` had to contain some clues to help us narrow down the search criteria. I begin looking through the file for any clues that might point us towards where the flag might be. After a quick search through the contents of the files, we find a file named `Root.plist` located in `data.tar.lzma/Library/PreferenceBundles/whyOSsettings.bundle/` which contained the following snippet of code:
