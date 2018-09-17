@@ -47,6 +47,7 @@ default 19:12:18.884704 -0400   Preferences ca3412b55940568c5b10a616fa7b855e
 ```
 
 The first two results contained a bunch of extraneous information. However, the last result looked pretty close to what we were looking for:
+
 `default 19:12:18.884704 -0400   Preferences ca3412b55940568c5b10a616fa7b855e`
 
 So I tried checking if `ca3412b55940568c5b10a616fa7b855e` was the flag and it was!
