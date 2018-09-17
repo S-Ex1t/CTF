@@ -10,7 +10,7 @@
 > Sun 9:09 AM: its a hex string guys
 ***
 
-Update: Since I was completely new to iOS applications, I decided to do a little more research after the CTF was over. I knew my solution was not the intended method to solve the challenge and it also relied heavily on the hint, so I began doing some research on log entries and how they are generated to figure out how to solve this the correct way. As it turns out, my assumptions about the flag format were completely wrong and my solution was 100% luck and coincidence. Nevertheless, I still got the flag and ended up learning something new, so that's a win in my book.
+***Update:*** *Since I was completely new to iOS applications, I decided to do a little more research after the CTF was over. I knew my solution was not the intended method to solve the challenge and it also relied heavily on the hint, so I began doing some research on log entries and how they are generated to figure out how to solve this the correct way. As it turns out, my assumptions about the flag format were completely wrong and my solution was 100% luck and coincidence. Nevertheless, I still got the flag and ended up learning something new, so that's a win in my book.*
 
 For this challenge, we are given two files: [com.yourcompany.whyos_4.2.0-28debug_iphoneos-arm.deb](com.yourcompany.whyos_4.2.0-28debug_iphoneos-arm.deb) and [console.log](console.log). 
 
