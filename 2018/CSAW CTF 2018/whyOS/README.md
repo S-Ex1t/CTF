@@ -29,7 +29,7 @@ I felt this was enough to at least get me started, so I began a search with the 
 - The flag is a hex string of 32 characters or more
 
 Using this criteria, I wrote a quick python script to filter through the entries:
-```
+```python
 import re
 with open('console.log','r') as f:
     data = [i.strip() for i in f]
