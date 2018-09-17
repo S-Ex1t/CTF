@@ -63,5 +63,4 @@ flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}
 ```
 Using my impeccable detective skills, I figured `flag{FAKE_FLAG_IS_ALWAYS_GOOD}` was probably not the correct flag, which leaves us with one other option: `flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}`.
 
-The flag is:
-`flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}`
+Flag: `flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}`
