@@ -61,7 +61,7 @@ flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}
 flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}
 flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}
 ```
-Using my impeccable detective skills, I figured `flag{FAKE_FLAG_IS_ALWAYS_GOOD}` was probably not the correct flag, which leaves us with one other option: `flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}`.
+Using my impeccable detective skills, I figured `flag{FAKE_FLAG_IS_ALWAYS_GOOD}` was probably not the correct flag, which leaves us with one other option: `flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}`. I am not sure whether this was how the author intended the challenge to be solved or if we were supposed to mount the file and search through the directory, but if it works, it works.
 
 The flag is:
 `flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}`
