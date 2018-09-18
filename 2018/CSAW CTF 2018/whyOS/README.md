@@ -50,4 +50,4 @@ The first two results contained a bunch of extraneous information. However, the 
 
 So I tried checking if `ca3412b55940568c5b10a616fa7b855e` was the flag and it was!
 
-Flag: `ca3412b55940568c5b10a616fa7b855e`
+***Flag: `ca3412b55940568c5b10a616fa7b855e`***
