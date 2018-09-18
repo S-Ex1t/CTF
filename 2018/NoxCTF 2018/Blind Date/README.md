@@ -64,7 +64,7 @@ Instead, we see:
 
 `e0ff d8ff 464a 1000 0100 4649`
 
-We can see that the order of bytes is reversed for every four bytes, so I write a quick script to fix the file:
+We can see that the order of bytes is reversed for every four bytes, so I write a quick [script](fix.py) to fix the file:
 ```python
 with open('BlindDate.jpeg','rb') as f:
     data = f.read()
@@ -87,7 +87,7 @@ If we base64 decode this, we get:
 .    .   .       .      .    .   .  .  
     ..          ..      .   ..      .  .
 ```
-This looks like braille, which goes right along with the theme of the challenge, ***Blind*** Date. From this, we get the password to the zip file, `F4C3P4LM`. We open the `flag.txt` file which gives us:
+This looks like braille, which goes right along with the theme of the challenge, ***Blind*** Date. From this, we get the password to the zip file, `F4C3P4LM`. We open the [flag.txt](flag.txt) file which gives us:
 ```
 ++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>>++++++++++.+.+++++++++.<---.+++++++++++++++++.--------------.>+++.<+++++++++++++++++.<++++++++++++++++++.>>------.---------.--------.-----.++++++++++++++++++++++++++.<<.>>----.<++++++++.+++.>---------.<<+.>>++.<++.-----.+++++.<+++.>>++++++.<<-.>-----.<+.>.+++.>--------.<<---.>>++.<++.-----.+++++.<+++.>>++++++.<<-.++++++++++++.>>+++++++++.<<<++++++++++++++++++++++.
 ```
