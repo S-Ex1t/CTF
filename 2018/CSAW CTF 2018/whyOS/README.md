@@ -8,7 +8,6 @@
 > *Update (09/15 11:45 AM EST) - Point of the challenge has been raised to 300 Update*
 >
 > *Sun 9:09 AM: its a hex string guys*
-***
 ## Solution
 For this challenge, we are given two files: [com.yourcompany.whyos_4.2.0-28debug_iphoneos-arm.deb](com.yourcompany.whyos_4.2.0-28debug_iphoneos-arm.deb) and [console.log](console.log). Admittedly, I had almost no experience with iOS prior to this, so my solution relied heavily on the hints given and a bit of luck. I probably would not have found the flag otherwise.
 
