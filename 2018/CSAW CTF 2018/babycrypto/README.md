@@ -11,7 +11,6 @@
 >yeet is yeet
 >
 >Yeetdate: yeeted yeet at yeet: 9:42 pm
----
 ## Solution
 For this challenge, we are given [ciphertext.txt](ciphertext.txt) which contains a base64 encoded string.
 With the challenge being worth 50 points, I figured it would be encrypted with a relatively simple method.
