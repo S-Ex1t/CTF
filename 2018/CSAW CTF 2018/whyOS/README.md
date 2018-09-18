@@ -24,14 +24,14 @@ We begin by taking a quick glance through the `console.log` to see what we were 
 Since I had almost no experience with iOS prior to this, I was not sure what exactly it meant, but it was one of the only files which showed any indication of where the flag could possibly be. I assumed this was the format for the log entry where the flag was hiding, so I figured it wouldn't hurt to try a quick search. Based on the snippet of code above, I assumed the flag was in the last field of the log entry. Combining this with the hint, `the flag is literally a hex string`, I was able to narrow down my search results immensely. I also assumed the flag was at least 32 characters long in order to narrow down the initial search results even more. Using this criteria, I wrote a quick python script to filter through the log entries:
 ```python
 import re
-with open('console.log','r') as f:
+with open('console.log', 'r') as f:
     data = [i for i in f]
     
 matches = []
 for i in data:
     if i.isspace():
         continue
-    if re.match('^[a-f0-9]{32,}$',i.split()[-1],re.I):
+    if re.match('^[a-f0-9]{32,}$', i.split()[-1], re.I):
             matches.append(i)
 
 for i in matches:
