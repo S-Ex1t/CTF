@@ -1,5 +1,5 @@
 Test
-[Full Solution](#Solution)
+[Full Solution](#Full-Solution)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta nibh venenatis cras sed felis eget velit aliquet sagittis. Vitae tortor condimentum lacinia quis vel. Sagittis orci a scelerisque purus semper. Diam in arcu cursus euismod quis viverra nibh cras pulvinar. Egestas integer eget aliquet nibh praesent. Pellentesque nec nam aliquam sem et tortor. Felis eget nunc lobortis mattis aliquam faucibus. Sem nulla pharetra diam sit amet nisl suscipit. Quisque non tellus orci ac auctor augue mauris. Mattis rhoncus urna neque viverra justo nec. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Senectus et netus et malesuada fames ac turpis egestas sed. Elementum nibh tellus molestie nunc non blandit. Nisi quis eleifend quam adipiscing vitae proin. Feugiat scelerisque varius morbi enim.
 
@@ -15,7 +15,7 @@ Feugiat scelerisque varius morbi enim nunc. Egestas maecenas pharetra convallis 
 © 2015 — 2018
 © 2015 — 2018
 this is a test
-# Solution <a id="Solution"></a>
+# <a id="Full-Solution"></a>Solution
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta nibh venenatis cras sed felis eget velit aliquet sagittis. Vitae tortor condimentum lacinia quis vel. Sagittis orci a scelerisque purus semper. Diam in arcu cursus euismod quis viverra nibh cras pulvinar. Egestas integer eget aliquet nibh praesent. Pellentesque nec nam aliquam sem et tortor. Felis eget nunc lobortis mattis aliquam faucibus. Sem nulla pharetra diam sit amet nisl suscipit. Quisque non tellus orci ac auctor augue mauris. Mattis rhoncus urna neque viverra justo nec. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Senectus et netus et malesuada fames ac turpis egestas sed. Elementum nibh tellus molestie nunc non blandit. Nisi quis eleifend quam adipiscing vitae proin. Feugiat scelerisque varius morbi enim.
 
