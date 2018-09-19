@@ -3,7 +3,7 @@
 ## Summary
 The [full solution](#Full-Solution) can be found below.
 
-Unzip [mondai.zip](mondai.zip) to get [y0k0s0.zip](y0k0s0.zip).
+First we unzip [mondai.zip](mondai.zip) to get [y0k0s0.zip](y0k0s0.zip).
 
 `y0k0s0.zip` is password protected with password: `y0k0s0`.
 
