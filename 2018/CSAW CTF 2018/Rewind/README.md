@@ -1,7 +1,7 @@
 # Rewind
 ***Category: Forensics***
 >Sometimes you have to look back and replay what has been done right and wrong
----
+## Solution
 For this challenge, we are given a file `rewind.tar.gz`.
 
 We begin by extracting the contents using `tar -xzf rewind.tar.gz`. We are given two files: `rewind-rr-snp` and `rewind-rr-nodent.log`. We then run our basic recon commands such as `file`, `strings`, and `binwalk` on the files to see what we are dealing with.
@@ -63,4 +63,4 @@ flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}
 ```
 Using my impeccable detective skills, I figured `flag{FAKE_FLAG_IS_ALWAYS_GOOD}` was probably not the correct flag, which leaves us with one other option: `flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}`.
 
-Flag: `flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}`
+***Flag: `flag{RUN_R3C0RD_ANA1YZ3_R3P3AT}`***
