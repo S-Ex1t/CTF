@@ -1,0 +1,38 @@
+# DefCamp CTF 2018: PasswordPolicy
+***Category: Web***
+>*Can you guess this extreme password?*
+>
+>*Target: https://password-policy.dctfq18.def.camp/*
+## Solution
+For this challenge, we are given a website, [https://password-policy.dctfq18.def.camp/](https://password-policy.dctfq18.def.camp/).
+
+We begin by going to the website and check the page's source code, where we find this:
+```
+    $('form').submit(function(e) {
+      if($('input[name="pass"]').val().length < 1337) {
+          alert('Minimum length for password is 1337 characters.');
+          e.preventDefault();
+          return false;
+      }
+  });
+```
+When you click on the `Login` button, it calls this script to check if the password is at least 1337 characters long. However, we can circumvent this check by passing the request through `BurpSuite` instead of having to click the button. First, we have to find out what a normal request should look like so we send a string of 1337 `0`s through the browser and watch the request in Burp. We see the request looks like this:
+```
+POST / HTTP/1.1
+Host: password-policy.dctfq18.def.camp
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: https://password-policy.dctfq18.def.camp/
+Cookie: __cfduid=dba03a754594671cc15e0683ec5c180301537682722; _ga=GA1.2.1717138297.1537682724; _gid=GA1.2.1786104063.1537682724
+Connection: close
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 1380
+
+user=admin%40leftover.dctf&pass=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&btn-login=
+```
+Next, we send the request to `Intruder` in `BurpSuite` and set the payload to some common [passwords](list.txt). We edit it to only change the password field and start the attack. A couple seconds later, we find the flag in the response for the password `password`.
+
+***Flag: `DCTF{db95ace20ae3972f87d758a3724142ae93735c442a8482f9717fe4a9bb94d337}`***
