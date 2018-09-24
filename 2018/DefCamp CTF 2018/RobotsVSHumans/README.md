@@ -1,6 +1,7 @@
 # DefCamp CTF 2018: RobotsVSHumans
 ***Category: web***
 >*Find your flag on this website.
+
 >Target: https://robots-vs-humans.dctfq18.def.camp/*
 ## Solution
 For this challenge, we are given a website with a flag hidden somewhere in it.
