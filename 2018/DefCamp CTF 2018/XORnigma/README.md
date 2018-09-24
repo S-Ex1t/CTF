@@ -19,7 +19,7 @@ Here we see the cipher is doing a simple XOR cipher encrypted with a key. If we 
 ```python
 chr(int('3f',16)^ord('{'))
 ```
-We find out the next character in the key is `D`, so we can now safely assume the key is `DCTF`. I write a quick script to decrypt the rest of the string:
+We find out the next character in the key is `D`, so we can now safely assume the key is `DCTF`. I write a quick [script](solve.py) to decrypt the rest of the string:
 ```python
 enc = '000000003f2537257777312725266c24207062777027307574706672217a67747374642577263077777a3725762067747173377326716371272165722122677522746327743e'
 key = 'DCTF'
