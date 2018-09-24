@@ -1,0 +1,8 @@
+enc = '000000003f2537257777312725266c24207062777027307574706672217a67747374642577263077777a3725762067747173377326716371272165722122677522746327743e'
+key = 'DCTF'
+flag = ''
+
+for i in range(len(enc.decode('hex'))):
+    flag += chr(ord(enc.decode('hex')[i])^ord(key[i%len(key)]))
+
+print flag
