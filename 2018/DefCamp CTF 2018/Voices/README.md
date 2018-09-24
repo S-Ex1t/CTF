@@ -1,6 +1,6 @@
 # DefCamp CTF 2018: Voices
 ***Category: Misc***
-> *Listen. Can you hear the voices? They are there. Somehow.*
+>*Listen. Can you hear the voices? They are there. Somehow.*
 ## Solution
 For this challenge, we are given an an audio file, [voices.wav](voices.wav).
 
