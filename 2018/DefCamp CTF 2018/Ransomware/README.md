@@ -42,7 +42,7 @@ From there, we look to see if there is any plaintext which is spelled incorrectl
 ```
 << /Ty.e /XRef jLengt! 50 /Filter /FlateDecode /DecodePa ms << /Co.umns 4 /.redic=or 12 >>
 ```
-There are a couple obvious misspelled words like `Ty.e`, `Lengt!`, `Co.umns`, `.redic=or`, which should be `Type`, `Length`, `Columns`, and `Predictor`. Next we find the indexes of the misspelled characters with their corresponding characters in the key and switch it out with the correct letter. A few mins later and we get:
+There are a couple obvious misspelled words like `Ty.e`, `Lengt!`, `Co.umns`, `.redic=or`, which should be `Type`, `Length`, `Columns`, and `Predictor`. Next we find the indexes of the misspelled characters with their corresponding characters in the key and switch it out with the correct character. We can easily find the correct character by XORing the corresponding byte in the original file with the letter it should be. A few mins later and we get:
 ```
 :P-@uSL"Y1K$[X)fg[|".45Yq9i>eV)<0C:('q4nP[hGd/EeX+E7,2O"+:[2
 ```
