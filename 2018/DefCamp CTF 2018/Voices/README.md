@@ -6,7 +6,7 @@ For this challenge, we are given an an audio file, [voices.wav](voices.wav).
 
 I begin by opening the file in Audacity, but it seems to be just static. Nothing much we can do with that. So next we check the spectrogram. At first glance, there seems to be nothing there either. However, if we zoom out on the frequency range, we start to see some strange patterns.
 ![spectrogram.jpg](spectrogram.jpg)
-Upon further inspection, the strange patterns seem to be two sets of binary. I make a few quick adjustments to help make it a tiny bit easier to read:
+Upon further inspection, the strange patterns seem to be two sets of binary strings. I make a few quick adjustments to help make it easier to read:
 ![zoomed.jpg](zoomed.jpg)
 And now for the fun part: transcribing the binary strings. Fast forward about 15 minutes and we get:
 ```
